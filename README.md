@@ -37,19 +37,62 @@ Diff = A ⊕ B ⊕ Bin
 Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
+full adder
+![full adder](https://github.com/user-attachments/assets/4c72e512-3899-4d0b-b6b1-fb64de39647f)
 
-**Procedure**
 
-Write the detailed procedure here
+full subtractor
+![full subtractor](https://github.com/user-attachments/assets/530eeb43-40d6-4ad7-b6c9-511604838106)
+
+
+**Procedure** 
+
+Full adder
+A full adder is a combinational logic circuit that adds three one-bit binary numbers to produce a two-bit output. The output is the sum and the carry value. The truth table for a full adder can be used to implement the full adder logic. 
+Full subtractor
+A full subtractor is a combinational circuit that performs subtraction involving three bits: A (minuend), B (subtrahend), and Bin (borrow-in). It produces two outputs: D (difference) and Bout (borrow out). 
 
 **Program:**
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+ Developed by:ATCHAYA B
+ RegisterNumber:24900268
+ 
+ Full Adder
+ module adder(a,b,cin,sum,carry);
+input a,b,cin;
+output sum,carry;
+assign sum=( (a ^ b)^cin);
+assign carry= ( (a & b)| ( cin &(a ^ b )));
+endmodule
+
+
+Full Subtractor
+module subtractor(a,b,bin,difference,borrow);
+input a,b,bin;
+output difference,borrow;
+assign difference= ( (a ^ b)^bin);
+assign borrow= ( ( ~a & b)| ( bin & (~(a ^ b ))));
+endmodule
+
+
 
 **RTL Schematic**
 
+Full Adder
+![exp 4 rtl](https://github.com/user-attachments/assets/fe9041d0-f80d-4eac-8aed-93de624924e0)
+Full Subtractor
+![exp 4 1 rtl](https://github.com/user-attachments/assets/1518c2cd-d3ec-49d5-8089-7b8d9d946a63)
+
+
+
 **Output Timing Waveform**
+
+Full Adder
+![exp 4](https://github.com/user-attachments/assets/ac2fdf67-a7f1-478a-bd0d-2f3576fa6ca1)
+Full Subtractor
+![exp 4 1](https://github.com/user-attachments/assets/472b1a62-b0d4-4e5f-b6fe-dfc266fb4542)
+
+
 
 **Result:**
 
