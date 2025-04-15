@@ -88,12 +88,19 @@ endmodule;
 
 **RTL Schematic**
 
+ ![Screenshot (43)](https://github.com/user-attachments/assets/8dac6c65-f418-473d-8f9b-31765c6b2c6f)
+ ![Screenshot (45)](https://github.com/user-attachments/assets/b07d4597-77f0-4de2-bf62-e4881a86364c)
+
 
 **Output Timing Waveform**
 
+ ![Screenshot (44)](https://github.com/user-attachments/assets/7bebeeb0-67db-47b5-b8c3-30c8afb18830)
+ ![Screenshot (46)](https://github.com/user-attachments/assets/4df8051e-1036-4a32-b2eb-c9a274118663)
+
+
 **Result:**
 
-Thus the Full Adder and Full Subtractor circuits are designed and the truth tables is verified using Quartus software.
+  Thus the Full Adder and Full Subtractor circuits are designed and the truth tables is verified using Quartus software.
 
 
 
