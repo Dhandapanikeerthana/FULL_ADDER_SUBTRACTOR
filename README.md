@@ -61,7 +61,7 @@ Borrow out = A'Bin + A'B + BBin
 
 FULL ADDER
 
-module exp4(a,b,c,sum, carry);
+module FH(a,b,c,sum, carry);
 input a,b,c;
 output sum, carry;
 wire w1,w2,w3;
@@ -74,7 +74,7 @@ endmodule;
 
 FULL SUBTRACTOR
 
-module fs(difference, borrow, a, b, bin);
+module FH(difference, borrow, a, b, bin);
 input a,b,bin;
 output differencef,borrow;
 wire w1,w2,w3;
