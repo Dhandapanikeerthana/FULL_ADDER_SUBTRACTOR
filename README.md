@@ -74,15 +74,15 @@ endmodule;
 
 FULL SUBTRACTOR
 
-module fs(df, bo, a, b, bin);
+module fs(difference, borrow, a, b, bin);
 input a,b,bin;
-output df,bo;
+output differencef,borrow;
 wire w1,w2,w3;
 assign w1=a^b;
 assign w2=(~a&b);
 assign w3=(~w1&bin);
-assign df=w1^bin;
-assign bo=w2|w3;
+assign difference=w1^bin;
+assign borrow=w2|w3;
 endmodule;
 ```
 
